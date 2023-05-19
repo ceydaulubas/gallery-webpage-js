@@ -1,0 +1,41 @@
+.podcast-title {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 60px;
+  line-height: 82px;
+  text-transform: capitalize;
+  color: #000000;
+  margin-left: 20px;
+  margin-top: 25%;
+}
+
+.podcast-description {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 41px;
+  text-transform: capitalize;
+  color: #000000;
+  margin-left: 20px;
+}
+
+.podcast-content {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  margin-left: 20px;
+  color: rgba(128, 128, 128, 1);
+}
+
+.spotify-title {
+  font-family: "Avenir";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #808080;
+}
