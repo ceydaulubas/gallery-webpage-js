@@ -39,3 +39,9 @@
   line-height: 150%;
   color: #808080;
 }
+
+@media (max-width: 767px) {
+  .thirdimg {
+    visibility: hidden;
+  }
+}

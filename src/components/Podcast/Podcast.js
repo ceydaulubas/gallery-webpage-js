@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import { Container, Row, Col } from "react-bootstrap";
+import { Container, Row, Col, Spinner } from "react-bootstrap";
 import "./Podcast.css";
 import Rectangle2937 from "../../images/Rectangle 2937.png";
 import Rectangle2938 from "../../images/Rectangle 2938.png";
@@ -22,6 +22,16 @@ const Podcast = () => {
                 setLoading(false);
             });
     }, []);
+
+    if (loading) {
+        return (
+            <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', height: '100vh' }}>
+                <Spinner animation="border" role="status">
+                    <span className="sr-only"></span>
+                </Spinner>
+            </div>
+        );
+    }
 
     return (
         <div style={{ background: 'linear-gradient(295.39deg, #D2D2D2 0%, #EFEFEF 94.8%)', borderRadius: '40px', margin: '50px 20px 0 20px' }}>
@@ -61,8 +71,6 @@ const Podcast = () => {
                             </Col>
                         </Row>
                     </Col>
-
-
                 </Row>
                 <Row style={{ margin: '50px ' }}>
                     <Col md={3} className="py-4">
@@ -114,6 +122,7 @@ const Podcast = () => {
             </Container>
         </div>
     );
+
 };
 
 export default Podcast;

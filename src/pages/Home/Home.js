@@ -37,9 +37,6 @@ function Home() {
             <Slider />
             <Podcast />
             <Discover />
-            <br />
-            <br />
-            <br />
             <Footer />
         </div>
 
